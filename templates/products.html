@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Products{% endblock %}
+
+{% block content %}
+    <h2>Products</h2>
+    
+    {% if product %}
+        <div class="product-card">
+            <h3>{{ product.name }}</h3>
+            <p><strong>Price:</strong> ${{ product.price }}</p>
+            <p>{{ product.description }}</p>
+        </div>
+    {% else %}
+        <p>No products available.</p>
+    {% endif %}
+{% endblock %}
