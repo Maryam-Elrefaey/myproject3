@@ -19,7 +19,10 @@
     1. Open your terminal and set the environment variable:     * On **Windows (PowerShell):**       ```bash      setx DJANGO_SECRET_KEY "your-secret-key-here"      ```    * On **Linux/Mac:**       ```bash      export DJANGO_SECRET_KEY="your-secret-key-here"      ```
        2. In `settings.py`, replace the old key with this code:     ```python    import os     SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "fallback-secret-key")    ```     * `"DJANGO_SECRET_KEY"` → يجيب المفتاح من environment.
 ## 🛠️ Technologies Used
-* **Python 3.13** * **Django 5.2.5** * **SQLite3** (default database) * **HTML5 / CSS3** *
+* **Python 3.13**
+* **Django 5.2.5**
+* **SQLite3** (default database)
+* **HTML5 / CSS3** 
 ## 🚀 How to Run
 1. Clone the repository:     ```bash    git clone https://github.com/your-username/products-management.git    cd products-management    ```
 2. Create a virtual environment and activate it.
