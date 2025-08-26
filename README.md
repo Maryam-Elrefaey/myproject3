@@ -16,8 +16,12 @@
 * * Product list page (`/products/`) that shows products if available, otherwise displays a "No products available" message.
 * * Security: **SECRET\_KEY is removed from settings.py**, and must be set manually as an environment variable.
 ## 🔑 Setting up SECRET\_KEY  For security reasons, the `SECRET_KEY` is not included in the repository. You need to set it up manually before running the project.
-    1. Open your terminal and set the environment variable:     * On **Windows (PowerShell):**       ```bash      setx DJANGO_SECRET_KEY "your-secret-key-here"      ```    * On **Linux/Mac:**       ```bash      export DJANGO_SECRET_KEY="your-secret-key-here"      ```
-       2. In `settings.py`, replace the old key with this code:     ```python    import os     SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "fallback-secret-key")    ```     * `"DJANGO_SECRET_KEY"` → يجيب المفتاح من environment.
+    1. Open your terminal and set the environment variable:     
+    * On **Windows (PowerShell):**       ```bash      setx DJANGO_SECRET_KEY "your-secret-key-here"      ```    
+    * On **Linux/Mac:**       ```bash      export DJANGO_SECRET_KEY="your-secret-key-here"      ```
+       2. In `settings.py`, replace the old key with this code:    
+       ```python    import os     SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "fallback-secret-key")    ```     
+       * `"DJANGO_SECRET_KEY"` → يجيب المفتاح من environment.
 ## 🛠️ Technologies Used
 * **Python 3.13**
 * **Django 5.2.5**
